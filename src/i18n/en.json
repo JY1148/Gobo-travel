@@ -1,0 +1,38 @@
+{
+    "header": {
+        "slogan": "Better your best vacation",
+        "add_new_language": "add new language",
+        "title": "New Travel",
+        "register":"Register",
+        "login":"Log In",
+        "home_page": "Home",
+        "Stays": "Stays",
+        "Flights": "Flights",
+        "Cars": "Cars",
+        "Packages": "Packages",
+        "Cruises": "Cruises",
+        "Road Trip": "Road Trip",
+        "Family": "Family",
+        "Romantic": "Romantic",
+        "Solo traveler": "Solo traveler",
+        "Beach": "Beach",
+        "Pet-friendly":"Pet-friendly",
+        "Luxury":"Luxury",
+        "All-Inclusive":"All-Inclusive",
+        "outdoor":"Outdoor",
+        "insurance":"Insurance",
+        "shoppingCart":"Shopping Cart",
+        "signOut":"Sign Out",
+        "welcome":"Welcome back"
+    },
+    "footer": {
+        "detail" : "All rights reserved @ ReactTravel.com"
+    },
+    "home_page": {
+        "hot_recommended": "Hot Recommended",
+        "new_arrival": "New arrival",
+        "domestic_travel": "Domestic travel",
+        "joint_venture": "Joint Venture",
+        "start_from": "(start from)"
+    }
+}

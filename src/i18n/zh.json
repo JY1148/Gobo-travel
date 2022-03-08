@@ -1,0 +1,38 @@
+{
+    "header": {
+        "slogan": "让旅行更幸福",
+        "add_new_language": "添加新语言",
+        "title": "React 旅游网",
+        "register":"注册",
+        "login":"登陆",
+        "home_page": "旅游首页",
+        "Stays": "周末游",
+        "Flights": "跟团游",
+        "Cars": "客车",
+        "Packages": "背包游",
+        "Cruises": "邮轮",
+        "Road Trip": "自驾游",
+        "Family": "亲子游",
+        "Romantic": "情侣游",
+        "Solo traveler": "独行侠",
+        "Beach": "沙滩之旅",
+        "Pet-friendly":"萌宠出行",
+        "Luxury":"豪华游",
+        "All-Inclusive":"包罗万有",
+        "outdoor":"爱玩户外",
+        "insurance":"保险",
+        "shoppingCart":"购物车",
+        "signOut":"注销",
+        "welcome":"欢迎回来"
+    },
+    "footer": {
+        "detail" : "版权所有 @ React 旅游网"
+    },
+    "home_page": {
+        "hot_recommended": "爆款推荐",
+        "new_arrival": "新品上市",
+        "domestic_travel": "国内游推荐",
+        "joint_venture": "合作企业",
+        "start_from": "(起)"
+    }
+}
