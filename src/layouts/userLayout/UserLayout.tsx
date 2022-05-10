@@ -31,7 +31,7 @@ export const UserLayout: React.FC = (props) => {
           <div className={styles["content-header"]}>
             <Link to="/">
               <img alt="logo" className={styles["logo"]} src={logo} />
-              <span className={styles["title"]}>React 旅游网</span>
+              <span className={styles["title"]}>Gobo Travel</span>
             </Link>
           </div>
           <div className={styles["desc"]}>
