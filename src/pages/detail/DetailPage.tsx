@@ -1,20 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { RouteComponentProps, useParams } from "react-router-dom";
-import axios from "axios";
 import { Spin, Row, Col, Divider, Typography, Anchor, Menu } from "antd";
 import styles from "./DetailPage.module.css";
-import {
-  Header,
-  Footer,
-  ProductIntro,
-  ProductComments,
-} from "../../components";
-import { DatePicker, Space, Button } from "antd";
+import { ProductIntro, ProductComments } from "../../components";
+import { DatePicker, Button } from "antd";
 import { commentMockData } from "./mockup";
-import {
-  productDetailSlice,
-  getProductDetail,
-} from "../../redux/productDetail/slice";
+import { getProductDetail } from "../../redux/productDetail/slice";
 import { useSelector } from "../../redux/hooks";
 import { useDispatch } from "react-redux";
 import { MainLayout } from "../../layouts/mainLayout";
@@ -37,9 +28,9 @@ export const DetailPage: React.FC<RouteComponentProps<MatchParams>> = () => {
 
   const dispatch = useDispatch();
 
-  const jwt = useSelector(s => s.user.token) as string
-  const shoppingCartLoading = useSelector((s) => s.shoppingCart.loading) 
-  
+  const jwt = useSelector((s) => s.user.token) as string;
+  const shoppingCartLoading = useSelector((s) => s.shoppingCart.loading);
+
   useEffect(() => {
     const fetchData = async () => {
       dispatch(getProductDetail(touristRouteId));
@@ -81,15 +72,17 @@ export const DetailPage: React.FC<RouteComponentProps<MatchParams>> = () => {
           </Col>
           <Col span={11}>
             <Button
-              style={{marginTop:50, marginBottom:30, display:"block"}}
+              style={{ marginTop: 50, marginBottom: 30, display: "block" }}
               type="primary"
               danger
               loading={shoppingCartLoading}
-              onClick={()=>{
-                dispatch(addShoppingCartItem({jwt, touristRouteId: product.id}))
+              onClick={() => {
+                dispatch(
+                  addShoppingCartItem({ jwt, touristRouteId: product.id })
+                );
               }}
             >
-              <ShoppingCartOutlined/>
+              <ShoppingCartOutlined />
               Add to cart
             </Button>
             <RangePicker open style={{ marginTop: 20 }} />

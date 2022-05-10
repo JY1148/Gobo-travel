@@ -11,11 +11,8 @@ interface PropsType extends RouteComponentProps{
 }
 
 const ProductImageComponent: React.FC<PropsType> = ({id, size, title, imageSrc, price, history, location, match}) => {
-    // console.log(history)
-    // console.log(location)
-    // console.log(match)
     return <Link to={`detail/${id}`}>
-        {size=="large"? (
+        {size==="large"? (
             <Image src={imageSrc} height={291} width={450}/> 
         ) : ( 
             <Image src={imageSrc} height={120} width={220}/>

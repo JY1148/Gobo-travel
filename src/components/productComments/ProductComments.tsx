@@ -1,4 +1,4 @@
-import { Comment, Tooltip, List } from "antd";
+import { Comment, List } from "antd";
 import React from "react";
 
 interface PropsType {

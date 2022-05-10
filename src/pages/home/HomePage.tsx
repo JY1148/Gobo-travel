@@ -1,8 +1,5 @@
-import React, { Children } from "react";
-import styles from "./HomePage.module.css";
+import React from "react";
 import {
-  Header,
-  Footer,
   Carousel,
   SideMenu,
   ProductCollection,
@@ -15,7 +12,6 @@ import sideImgae1 from "../../assets/image/sider_11.png";
 import sideImgae2 from "../../assets/image/sider_22.png";
 import sideImgae3 from "../../assets/image/sider_33.png";
 import { withTranslation, WithTranslation } from "react-i18next";
-import axios from "axios";
 import { connect } from "react-redux";
 import { RootState } from "../../redux/store";
 import {
@@ -50,7 +46,6 @@ class HomePageComponent extends React.Component<PropsType> {
   }
 
   render() {
-    // console.log(this.props.t)
     const { t, productList, loading, error  } = this.props;
 
     if (loading) {

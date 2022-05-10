@@ -1,15 +1,5 @@
-import React, { useEffect } from "react";
-import {
-  Skeleton,
-  Switch,
-  Card,
-  Avatar,
-  Button,
-  Typography,
-  Space,
-  Tag,
-  Table,
-} from "antd";
+import React from "react";
+import { Skeleton, Card, Button, Typography, Table } from "antd";
 import { DeleteOutlined, CheckCircleOutlined } from "@ant-design/icons";
 import { ColumnsType } from "antd/es/table";
 

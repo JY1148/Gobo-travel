@@ -1,6 +1,6 @@
 import styles from "./SearchPage.module.css";
 import React, { useEffect } from "react";
-import { Header, Footer, FilterArea, ProductList } from "../../components";
+import { FilterArea, ProductList } from "../../components";
 import { useParams, useLocation } from "react-router-dom";
 import { Spin } from "antd";
 import { searchProduct } from "../../redux/productSearch/slice";
@@ -44,7 +44,6 @@ export const SearchPage: React.FC = () => {
     );
   }
   if (error) {
-    console.log('3');
     return <div>Website Error: {error} </div>;
   }
 

@@ -38,13 +38,8 @@ type PropsType = RouteComponentProps & WithTranslation & ReturnType<typeof mapSt
 //redux dispatch映射类型
 
 class HeaderComponent extends React.Component<PropsType> {
-    
-
-
 
     menuClickHandler= (e) =>{
-      console.log(e);
-      // this.setState({ language: e.key });
       if(e.key==="more"){
         this.props.addLanguage("新语言", "new_lang");
       }else{
